@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header">
+            <a class="header__logo" href="index.html">
+                <img class="header__logo-img" src="./icons/Main-Logo.svg" width="111" height="31"
+                    alt="Логотип Med Studio">
+            </a>
+            <nav class="header-nav header-nav--closed">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link header-nav__link--auth" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Расписание</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Курсы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Проекты</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <details>
+                            <summary class="header-nav__link header-nav__link--list" href="#">Медиатека</summary>
+                            <div class="content">
+                                <a class="content__item">video</a>
+                                <a class="content__item">video</a>
+                                <a class="content__item">video</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="header-nav__item">
+                        <details>
+                            <summary class="header-nav__link header-nav__link--list" href="#">О проекте</summary>
+                            <div class="content">
+                                <a class="content__item">проект</a>
+                                <a class="content__item">проект</a>
+                                <a class="content__item">проект</a>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">
+                            <svg width="25" height="16" viewBox="0 0 25 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_24965_65)">
+                                    <path
+                                        d="M4.95 10.97L2.898 6.02L2.16 4.112V14.3H0V1.7H3.24L6.048 8.522L8.856 1.7H12.06V14.3H9.9V4.094L9.144 6.02L7.11 10.97H4.95Z"
+                                        fill="#40B526" />
+                                    <path
+                                        d="M19.8023 14.462C16.6703 14.462 15.2123 13.058 15.0323 10.07H17.3363C17.4623 11.78 18.1463 12.428 19.8023 12.428C21.5303 12.428 22.3043 11.69 22.3043 10.754C22.3043 7.946 15.2123 9.674 15.2123 5.048C15.2123 3.032 16.7243 1.538 19.8023 1.538C22.8623 1.538 24.2123 2.87 24.3923 5.57H22.0883C21.9623 4.13 21.3683 3.554 19.7843 3.554C18.1643 3.554 17.4803 4.238 17.4803 5.066C17.4803 7.748 24.5723 5.966 24.5723 10.79C24.5723 12.968 23.0603 14.462 19.8023 14.462Z"
+                                        fill="#40B526" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_24965_65">
+                                        <rect width="24.5723" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <svg width="49" height="16" viewBox="0 0 49 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.572266" width="48" height="16" rx="8" fill="#252D33" />
+                                <path
+                                    d="M13.4474 3.99091C13.6744 4.1 13.8054 4.27203 13.8403 4.50699C13.884 4.74196 13.8228 4.95594 13.657 5.14895C13.5435 5.3 13.3951 5.38392 13.2117 5.4007C13.0371 5.41748 12.8581 5.38392 12.6748 5.3C12.4653 5.20769 12.2426 5.13636 12.0069 5.08601C11.7799 5.03566 11.5398 5.01049 11.2867 5.01049C10.8152 5.01049 10.3918 5.08182 10.0164 5.22448C9.64972 5.36713 9.33543 5.57273 9.07352 5.84126C8.81161 6.1014 8.61081 6.41189 8.47112 6.77273C8.34017 7.13357 8.27469 7.53217 8.27469 7.96853C8.27469 8.48042 8.3489 8.92517 8.49731 9.3028C8.65446 9.68042 8.86835 9.9951 9.139 10.2469C9.40964 10.4986 9.7283 10.6874 10.095 10.8133C10.4616 10.9308 10.8589 10.9895 11.2867 10.9895C11.5224 10.9895 11.7581 10.9685 11.9938 10.9266C12.2295 10.8846 12.4565 10.8091 12.6748 10.7C12.8581 10.6161 13.0371 10.5867 13.2117 10.6119C13.3951 10.6371 13.5478 10.7252 13.6701 10.8762C13.8447 11.086 13.9058 11.3042 13.8534 11.5308C13.8097 11.749 13.6788 11.9084 13.4605 12.0091C13.2335 12.1182 12.9978 12.2105 12.7534 12.286C12.5176 12.3531 12.2776 12.4035 12.0331 12.4371C11.7887 12.479 11.5398 12.5 11.2867 12.5C10.6581 12.5 10.0601 12.4035 9.49258 12.2105C8.93383 12.0175 8.43184 11.7322 7.98659 11.3545C7.55007 10.9769 7.20522 10.507 6.95204 9.94476C6.69886 9.37413 6.57227 8.71538 6.57227 7.96853C6.57227 7.32238 6.68576 6.72657 6.91275 6.18112C7.14847 5.63566 7.47586 5.16573 7.89492 4.77133C8.32271 4.36853 8.8247 4.05804 9.40091 3.83986C9.97711 3.61329 10.6057 3.5 11.2867 3.5C11.6708 3.5 12.0462 3.54196 12.4129 3.62587C12.7796 3.70979 13.1244 3.83147 13.4474 3.99091Z"
+                                    fill="#94A9B7" />
+                                <path
+                                    d="M21.6054 10.9014C21.8323 10.9014 22.02 10.9727 22.1685 11.1154C22.3256 11.2497 22.4042 11.4259 22.4042 11.6441C22.4042 11.8538 22.3256 12.0301 22.1685 12.1727C22.02 12.307 21.8323 12.3741 21.6054 12.3741H17.3493C17.1223 12.3741 16.9302 12.3028 16.7731 12.1601C16.6247 12.0091 16.5505 11.8245 16.5505 11.6063V4.33077C16.5505 4.11259 16.629 3.93217 16.7862 3.78951C16.9433 3.63846 17.1441 3.56294 17.3886 3.56294C17.5981 3.56294 17.7815 3.63846 17.9386 3.78951C18.1045 3.93217 18.1874 4.11259 18.1874 4.33077V11.1154L17.8993 10.9014H21.6054Z"
+                                    fill="#94A9B7" />
+                                <path
+                                    d="M31.4662 3.55035C31.6932 3.55035 31.8765 3.62587 32.0162 3.77692C32.1559 3.91958 32.2258 4.1 32.2258 4.31818V8.87482C32.2258 9.57133 32.0686 10.1881 31.7543 10.7252C31.4487 11.2622 31.0253 11.6818 30.484 11.9839C29.9428 12.286 29.3142 12.4371 28.5983 12.4371C27.8824 12.4371 27.2494 12.286 26.6994 11.9839C26.1581 11.6818 25.7304 11.2622 25.4161 10.7252C25.1105 10.1881 24.9577 9.57133 24.9577 8.87482V4.31818C24.9577 4.1 25.0363 3.91958 25.1934 3.77692C25.3506 3.62587 25.5514 3.55035 25.7958 3.55035C25.9966 3.55035 26.1756 3.62587 26.3328 3.77692C26.4986 3.91958 26.5816 4.1 26.5816 4.31818V8.87482C26.5816 9.2944 26.6732 9.65944 26.8566 9.96993C27.0486 10.272 27.2975 10.507 27.603 10.6748C27.9173 10.8427 28.2491 10.9266 28.5983 10.9266C28.9737 10.9266 29.3229 10.8427 29.6459 10.6748C29.9689 10.507 30.2309 10.272 30.4317 9.96993C30.6325 9.65944 30.7329 9.2944 30.7329 8.87482V4.31818C30.7329 4.1 30.7983 3.91958 30.9293 3.77692C31.0602 3.62587 31.2392 3.55035 31.4662 3.55035Z"
+                                    fill="#94A9B7" />
+                                <path
+                                    d="M39.5996 3.56294C40.4377 3.56294 41.0619 3.75175 41.4722 4.12937C41.8826 4.50699 42.0877 5.06504 42.0877 5.8035C42.0877 6.1979 41.9873 6.54615 41.7865 6.84825C41.5857 7.14196 41.2889 7.37273 40.896 7.54056C40.5032 7.7 40.0186 7.77972 39.4424 7.77972L39.4948 7.21329C39.7655 7.21329 40.0754 7.25105 40.4246 7.32657C40.7738 7.39371 41.1099 7.51958 41.433 7.7042C41.7647 7.88042 42.0354 8.13217 42.2449 8.45944C42.4631 8.77832 42.5723 9.18951 42.5723 9.69301C42.5723 10.2469 42.4762 10.7 42.2842 11.0524C42.1008 11.4049 41.8564 11.6776 41.5508 11.8706C41.2453 12.0636 40.9179 12.1979 40.5686 12.2734C40.2194 12.3406 39.8833 12.3741 39.5603 12.3741H36.2995C36.0725 12.3741 35.8804 12.3028 35.7233 12.1601C35.5749 12.0091 35.5007 11.8245 35.5007 11.6063V4.33077C35.5007 4.11259 35.5749 3.93217 35.7233 3.78951C35.8804 3.63846 36.0725 3.56294 36.2995 3.56294H39.5996ZM39.3639 5.04825H37.0328L37.2031 4.84685V7.12517L37.0459 7.01189H39.4031C39.6563 7.01189 39.8833 6.93217 40.0841 6.77273C40.2849 6.61329 40.3853 6.38252 40.3853 6.08042C40.3853 5.71958 40.2893 5.45944 40.0972 5.3C39.9139 5.13217 39.6694 5.04825 39.3639 5.04825ZM39.4686 8.4972H37.0852L37.2031 8.3965V11.0524L37.0721 10.9266H39.5603C39.9619 10.9266 40.2805 10.8259 40.5163 10.6245C40.752 10.4147 40.8698 10.1042 40.8698 9.69301C40.8698 9.31538 40.7913 9.04266 40.6341 8.87482C40.477 8.70699 40.2893 8.6021 40.071 8.56014C39.8528 8.51818 39.652 8.4972 39.4686 8.4972Z"
+                                    fill="#94A9B7" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__button" type="button"></button>
+            <details class="header__button-details">
+                <summary class="header__button-desktop">Личный кабинет</summary>
+                <div class="modal modal--desktop">
+                    <h2 class="modal__title">Вход</h2>
+                    <form class="modal__form" action="#" method="post">
+                        <div class="modal__form-wrapper">
+                            <label class="visually-hidden" for="auth-login">Логин</label>
+                            <input class="modal__form-field" type="text" id="auth-login" name="auth-login"
+                                placeholder="Логин" minlength="1" maxlength="25" required autofocus>
+                        </div>
+                        <div class="modal__form-wrapper">
+                            <label class="visually-hidden" for="auth-password">Пароль</label>
+                            <input class="modal__form-field" type="password" id="auth-password" name="auth-password"
+                                placeholder="Пароль" required>
+                        </div>
+                        <div class="modal__form-wrapper">
+                            <input class="modal__form-remember" type="checkbox">
+                            <p class="modal__form-remember-text">Запомнить меня</p>
+                        </div>
+                        <a class="modal__link-help">Забыли пароль?</a>
+                        <div class="modal__group">
+                            <button class="modal__auth-button" type="submit">Войти</button>
+                            <a class="modal__link-registration" href="#">Регистрация</a>
+                        </div>
+                    </form>
+                </div>
+            </details>
+            <button class="header__button-menu" type="button"></button>
+        </header>
+        <main>
+            <section class="main-nav">
+                <h1 class="visually-hidden">Главная навигация нашего сайта</h1>
+                <nav class="nav-page">
+                    <ul class="nav-page__list">
+                        <li class="nav-page__item">
+                            <a class="nav-page__link nav-page__link--current" href="#">Описание</a>
+                        </li>
+                        <li class="nav-page__item">
+                            <a class="nav-page__link" href="#">Обучение</a>
+                        </li>
+                        <li class="nav-page__item">
+                            <a class="nav-page__link nav-page__link--chat" href="#">Чат</a>
+                        </li>
+                        <li class="nav-page__item">
+                            <a class="nav-page__link" href="#">Документы и оплата</a>
+                        </li>
+                    </ul>
+                    <div class="nav-page__group">
+                        <button class="nav-page__button prev" type="button">
+                            < </button>
+                                <button class="nav-page__button next" type="button">></button>
+                    </div>
+                </nav>
+            </section>
+
+            <section class="well">
+                <h2 class="visually-hidden"></h2>
+                <div class="well__wrapper">
+                    <span class="well__logo"></span>
+                    <p class="well__text">+36</p>
+                </div>
+                <ul class="well__advantages-list">
+                    <li class="well__advantages-item">
+                        <p class="well__advantages-text well__advantages-text--kit">новый поток</p>
+                    </li>
+                    <li class="well__advantages-item">
+                        <p class="well__advantages-text well__advantages-text--date">с 25 августа</p>
+                    </li>
+                    <li class="well__advantages-item">
+                        <span class=""></span>
+                        <p class="well__advantages-text well__advantages-text--module">12 модулей</p>
+                    </li>
+                    <li class="well__advantages-item">
+                        <p class="well__advantages-text well__advantages-text--time">40 ак. часов</p>
+                    </li>
+                </ul>
+                <h2 class="well__title">Лечение острых вирусных инфекций методом энтервектоскопии</h2>
+                <div class="well__wrapper-primary">
+                    <button class="well__button" type="button">акушерство</button>
+                    <button class="well__button" type="button">акушерство</button>
+                </div>
+                <div class="well__wrapper-secondary">
+                    <button class="well__button-default" type="button">Default</button>
+                    <span class="well__tooltip">
+                        <button class="well__button-secondary" type="button">Купить</button>
+
+                        <span class="well__tooltip-text">Успей приобрести курс по выгодной цене. Акция продлится до
+                            конца дня!
+                            <a class="well__tooltip-link" href="#">Перейти к оплате курса</a>
+                            <button class="well__tooltip-button" type="button">x</button>
+                        </span>
+                    </span>
+                </div>
+
+                <span class="well__logo-firm"></span>
+
+            </section>
+
+            <section class="well-about">
+                <h2 class="visually-hidden"></h2>
+                <p class="well-about__text">Зенитное часовое число, как бы это ни казалось парадоксальным,
+                    притягивает
+                    случайный Ганимед. Как было показано выше, природа гамма-всплексов вызывает болид . Вселенная
+                    достаточно
+                    огромна, чтобы аномальная джетовая активность последовательно оценивает центральный параметр.
+                    Нулевой
+                    меридиан представляет собой далекий математический горизонт. Хотя хpонологи не увеpены, им
+                    кажется,
+                    что
+                    декретное время вызывает лимб. У планет-гигантов нет твёрдой поверхности, таким образом астероид
+                    прочно
+                    оценивает натуральный логарифм.
+                </p>
+            </section>
+
+            <section class="program">
+                <h2 class="program__main-title">Программа курса</h2>
+                <details open>
+                    <summary class="program__title">Часть 1. Теоретическая часть</summary>
+                    <div class="program__wrapper">
+                        <ul class="program__list">
+                            <li class="program__item">
+                                <video class="program__video program__video--open" poster="./images/program-1.jpg"
+                                    width="120">
+                                </video>
+                                <button class="program__button-play" type="button"></button>
+                                <p class="program__text">Лекция 1. Что такое резекция лазером и в чём преимущество
+                                    энтервектоскопии для лечения бесплодия</p>
+                            </li>
+                            <li class="program__item program__item--block">
+                                <video class="program__video program__video--close" poster="./images/program-2.jpg"
+                                    width="120"></video>
+                                <p class="program__text">Лекция 2. Энтервектоскопия как базовый метод лечения
+                                    гемангиомы
+                                    Шлейна
+                                </p>
+                            </li>
+                            <li class="program__item program__item--block">
+                                <video class="program__video program__video--close" poster="./images/program-3.jpg"
+                                    width="120"></video>
+                                <p class="program__text">Лекция 3. Проведение прокралификации кожа при завершении
+                                    энтервектоскопии и дальнейшее симптоматическое лечение</p>
+                            </li>
+                            <li class="program__item program__item--online">
+                                <video class="program__video program__video--translation"
+                                    poster="./images/program-translation.jpg" width="120"></video>
+                                <p class="program__text">Онлайн-трансляция со всеми спикерами</p>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary class="program__title">Часть 2. Практическая часть</summary>
+                    <div class="program__wrapper">
+                        <ul class="program__list">
+                            <li class="program__item">
+                                <video class="program__video program__video--open" poster="./images/program-1.jpg"
+                                    width="120">
+                                </video>
+                                <button class="program__button-play" type="button"></button>
+                                <p class="program__text">Лекция 1. Что такое резекция лазером и в чём преимущество
+                                    энтервектоскопии для лечения бесплодия</p>
+                            </li>
+                            <li class="program__item program__item--block">
+                                <video class="program__video program__video--close" poster="./images/program-2.jpg"
+                                    width="120"></video>
+                                <p class="program__text">Лекция 2. Энтервектоскопия как базовый метод лечения
+                                    гемангиомы
+                                    Шлейна
+                                </p>
+                            </li>
+                            <li class="program__item program__item--block">
+                                <video class="program__video program__video--close" poster="./images/program-3.jpg"
+                                    width="120"></video>
+                                <p class="program__text">Лекция 3. Проведение прокралификации кожа при завершении
+                                    энтервектоскопии и дальнейшее симптоматическое лечение</p>
+                            </li>
+                            <li class="program__item program__item--online">
+                                <video class="program__video program__video--translation"
+                                    poster="./images/program-translation.jpg" width="120"></video>
+                                <p class="program__text">Онлайн-трансляция со всеми спикерами</p>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary class="program__title">Часть 3. Финал</summary>
+                    <div class="program__wrapper">
+                        <ul class="program__list">
+                            <li class="program__item">
+                                <video class="program__video program__video--open" poster="./images/program-1.jpg"
+                                    width="120">
+                                </video>
+                                <button class="program__button-play" type="button"></button>
+                                <p class="program__text">Лекция 1. Что такое резекция лазером и в чём преимущество
+                                    энтервектоскопии для лечения бесплодия</p>
+                            </li>
+                            <li class="program__item program__item--block">
+                                <video class="program__video program__video--close" poster="./images/program-2.jpg"
+                                    width="120"></video>
+                                <p class="program__text">Лекция 2. Энтервектоскопия как базовый метод лечения
+                                    гемангиомы
+                                    Шлейна
+                                </p>
+                            </li>
+                            <li class="program__item program__item--block">
+                                <video class="program__video program__video--close" poster="./images/program-3.jpg"
+                                    width="120"></video>
+                                <p class="program__text">Лекция 3. Проведение прокралификации кожа при завершении
+                                    энтервектоскопии и дальнейшее симптоматическое лечение</p>
+                            </li>
+                            <li class="program__item program__item--online">
+                                <video class="program__video program__video--translation"
+                                    poster="./images/program-translation.jpg" width="120"></video>
+                                <p class="program__text">Онлайн-трансляция со всеми спикерами</p>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <div class="program__wrapper-final">
+                    <p class="program__clue">доступно после прохождения курса</p>
+                    <h3 class="program__title-final">Часть 4. Итоговый контроль</h3>
+                    <div class="program__container">
+                        <p class="program__text-final program__text-final--question">Вопросов: 30</p>
+                        <p class="program__text-final program__text-final--time">Время: 60 мин</p>
+                        <p class="program__text-final program__text-final--attempt">Попыток: 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <article class="pay">
+                <h2 class="pay__title">Оплата курса</h2>
+                <p class="pay__description">Курс будет доступен сразу после оплаты, но для получения баллов НМО
+                    необходимо
+                    предоставить
+                    <a class="pay__link-document" href="#">документы</a>
+                </p>
+                <span class="pay__price">7 999 ₽</span>
+                <button class="pay__button" type="button">Перейти к оплате курса</button>
+                <button class="pay__button-sale" type="button">Получить скидку 10%</button>
+
+            </article>
+
+            <section class="sale">
+                <p class="sale__text">Подарок</p>
+                <h2 class="sale__title">Даём скидку 10% за просмотр материала партнёров</h2>
+                <p class="sale__description">Зенитное часовое число, как бы это ни казалось парадоксальным, притягивает
+                    случайный Ганимед. Как было показано выше, природа гамма-всплексов вызывает болид.</p>
+                <div class="sale__wrapper">
+                    <video class="sale__video" poster="./images/video-sale.jpg" width="280"></video>
+                    <button class="sale__button-play" type="button"></button>
+                    <span class="sale__icon">
+                        <p class="sale__icon-text">Скидка</p>
+                        <p class="sale__icon-size">10%</p>
+                    </span>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="footer__container">
+                <h2 class="footer__title">Спикеры</h2>
+                <div class="footer__wrapper">
+                    <div class="speakers">
+                        <img class="speakers__img" src="./images/Speaker-man.jpg" width="184" height="184"
+                            alt="Фото спикера Константинопольского Константина Константиновича">
+                        <p class="speakers__name">Константинопольский Константин Константинович</p>
+                        <p class="speakers__description">Главный внештатный специалист Минздрава России по управлению
+                            сестринской деятельностью, главная медицинская сестра ФГБУ «HMXЦ им. Н.И. Пирогова»
+                            Минздрава
+                            России, доцент кафедры управления сестринской деятельностью и социальной работы Первого МГМУ
+                            им.
+                            И.М. Сеченова, к.м.н.</p>
+                    </div>
+                    <div class="speakers">
+                        <img class="speakers__img" src="./images/Speaker-woman.jpg" width="184" height="184"
+                            alt="Фото спикера Елисеевой Дарьи Дмитриевны">
+                        <p class="speakers__name">Елисеева<br> Дарья Дмитриевна</p>
+                        <p class="speakers__description">Главный внештатный специалист Минздрава России по управлению
+                            сестринской деятельностью, главная медицинская сестра ФГБУ «HMXЦ им. Н.И. Пирогова»</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__container">
+                <h2 class="footer__title">Генеральные спонсоры</h2>
+                <div class="sponsors">
+                    <a class="sponsors__link sponsors__link--primary" href="https://www.drreddys.com/russia/"
+                        target="_blank"></a>
+                    <a class="sponsors__link sponsors__link--secondary" href="https://www.philips.ru/"
+                        target="_blank"></a>
+                </div>
+            </div>
+
+            <div class="footer__container">
+                <h2 class="footer__title">Партнёры</h2>
+                <div class="partners">
+                    <a class="partners__link partners__link--primary" href="https://bayer.ru/" target="_blank"></a>
+                    <a class="partners__link partners__link--secondary" href="https://www.bms.com/" target="_blank"></a>
+                    <a class="partners__link partners__link--third" href="https://www.amgen.com/" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
+
+        <article class="pay pay--desktop">
+            <h2 class="pay__title">Оплата курса</h2>
+            <p class="pay__description">Курс будет доступен сразу после оплаты, но для получения баллов НМО
+                необходимо
+                предоставить
+                <a class="pay__link-document" href="#">документы</a>
+            </p>
+            <span class="pay__price">7 999 ₽</span>
+            <button class="pay__button" type="button">Перейти к оплате курса</button>
+            <button class="pay__button-sale" type="button">Получить скидку 10%</button>
+
+        </article>
+
+        <div class="modal-container modal-container--closed">
+            <div class="modal">
+                <h2 class="modal__title">Вход</h2>
+                <button class="modal__button-close" type="button">X</button>
+                <form class="modal__form" action="#" method="post">
+                    <div class="modal__form-wrapper">
+                        <label class="visually-hidden" for="auth-login">Логин</label>
+                        <input class="modal__form-field" type="text" id="auth-login" name="auth-login"
+                            placeholder="Логин" minlength="1" maxlength="25" required autofocus>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <label class="visually-hidden" for="auth-password">Пароль</label>
+                        <input class="modal__form-field" type="password" id="auth-password" name="auth-password"
+                            placeholder="Пароль" required>
+                    </div>
+                    <div class="modal__form-wrapper">
+                        <input class="modal__form-remember" type="checkbox">
+                        <p class="modal__form-remember-text">Запомнить меня</p>
+                    </div>
+                    <a class="modal__link-help" href="#">Забыли пароль?</a>
+                    <div class="modal__group">
+                        <button class="modal__auth-button" type="submit">Войти</button>
+                        <a class="modal__link-registration" href="#">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
