@@ -9,6 +9,11 @@ const items = document.querySelectorAll('.nav-page__item');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 let currentIndex = 0;
+const headerListBtns = document.querySelectorAll('.header-nav__link--list');
+
+
+
+
 
 openButton.addEventListener('click', (evt) => {
     if(nav.classList.contains('header-nav--closed')) {
@@ -19,6 +24,13 @@ openButton.addEventListener('click', (evt) => {
      nav.classList.add('header-nav--closed');
      openButton.classList.remove('header__button-menu--close');
     }
+});
+
+headerListBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        const content = this.querySelector('.content');
+        content.classList.toggle('content--closed');
+    });
 });
 
 openModal.addEventListener('click', (evt) =>{
